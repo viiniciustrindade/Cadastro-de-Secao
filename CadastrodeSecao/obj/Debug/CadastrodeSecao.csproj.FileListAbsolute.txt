@@ -1,0 +1,11 @@
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\bin\Debug\CadastrodeSecao.exe.config
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\bin\Debug\CadastrodeSecao.exe
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\bin\Debug\CadastrodeSecao.pdb
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.csproj.AssemblyReference.cache
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.csproj.SuggestedBindingRedirects.cache
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.Form1.resources
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.Properties.Resources.resources
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.csproj.GenerateResource.cache
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.csproj.CoreCompileInputs.cache
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.exe
+C:\Users\estagiario3\Desktop\Movtech-Paciente-Api\CadastrodeSecao\CadastrodeSecao\obj\Debug\CadastrodeSecao.pdb
