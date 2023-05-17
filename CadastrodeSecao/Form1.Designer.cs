@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.dadosGrid = new System.Windows.Forms.DataGridView();
+            this.colCodSecao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescSecao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Excluir = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.txtDescSecao = new System.Windows.Forms.TextBox();
             this.txtCodSecao = new System.Windows.Forms.TextBox();
             this.labelNomeAutor = new System.Windows.Forms.Label();
-            this.colCodSecao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescSecao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,9 +45,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
+            this.label1.Size = new System.Drawing.Size(58, 20);
             this.label1.TabIndex = 36;
             this.label1.Text = "Código";
             // 
@@ -64,21 +65,42 @@
             this.dadosGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodSecao,
             this.colDescSecao});
-            this.dadosGrid.Location = new System.Drawing.Point(12, 103);
+            this.dadosGrid.Location = new System.Drawing.Point(16, 95);
+            this.dadosGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dadosGrid.Name = "dadosGrid";
             this.dadosGrid.ReadOnly = true;
+            this.dadosGrid.RowHeadersWidth = 51;
             this.dadosGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dadosGrid.Size = new System.Drawing.Size(567, 207);
+            this.dadosGrid.Size = new System.Drawing.Size(789, 340);
             this.dadosGrid.TabIndex = 35;
             this.dadosGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dadosGrid_CellDoubleClick);
+            // 
+            // colCodSecao
+            // 
+            this.colCodSecao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.colCodSecao.FillWeight = 152.2843F;
+            this.colCodSecao.HeaderText = "Codigo";
+            this.colCodSecao.MinimumWidth = 6;
+            this.colCodSecao.Name = "colCodSecao";
+            this.colCodSecao.ReadOnly = true;
+            this.colCodSecao.Width = 80;
+            // 
+            // colDescSecao
+            // 
+            this.colDescSecao.FillWeight = 73.85786F;
+            this.colDescSecao.HeaderText = "Descrição";
+            this.colDescSecao.MinimumWidth = 6;
+            this.colDescSecao.Name = "colDescSecao";
+            this.colDescSecao.ReadOnly = true;
             // 
             // btn_Excluir
             // 
             this.btn_Excluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Excluir.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Excluir.Location = new System.Drawing.Point(494, 69);
+            this.btn_Excluir.Location = new System.Drawing.Point(691, 60);
+            this.btn_Excluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Excluir.Name = "btn_Excluir";
-            this.btn_Excluir.Size = new System.Drawing.Size(85, 22);
+            this.btn_Excluir.Size = new System.Drawing.Size(113, 27);
             this.btn_Excluir.TabIndex = 34;
             this.btn_Excluir.Text = "Excluir";
             this.btn_Excluir.UseVisualStyleBackColor = true;
@@ -89,9 +111,10 @@
             this.btn_Salvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Salvar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Salvar.ForeColor = System.Drawing.Color.Black;
-            this.btn_Salvar.Location = new System.Drawing.Point(494, 47);
+            this.btn_Salvar.Location = new System.Drawing.Point(691, 34);
+            this.btn_Salvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Salvar.Name = "btn_Salvar";
-            this.btn_Salvar.Size = new System.Drawing.Size(85, 22);
+            this.btn_Salvar.Size = new System.Drawing.Size(113, 27);
             this.btn_Salvar.TabIndex = 33;
             this.btn_Salvar.Text = "Salvar";
             this.btn_Salvar.UseVisualStyleBackColor = true;
@@ -102,53 +125,40 @@
             this.txtDescSecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescSecao.BackColor = System.Drawing.SystemColors.Info;
-            this.txtDescSecao.Location = new System.Drawing.Point(110, 47);
+            this.txtDescSecao.Location = new System.Drawing.Point(147, 34);
+            this.txtDescSecao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescSecao.Multiline = true;
             this.txtDescSecao.Name = "txtDescSecao";
-            this.txtDescSecao.Size = new System.Drawing.Size(378, 44);
+            this.txtDescSecao.Size = new System.Drawing.Size(536, 53);
             this.txtDescSecao.TabIndex = 32;
             // 
             // txtCodSecao
             // 
             this.txtCodSecao.BackColor = System.Drawing.SystemColors.Window;
             this.txtCodSecao.Enabled = false;
-            this.txtCodSecao.Location = new System.Drawing.Point(110, 22);
+            this.txtCodSecao.Location = new System.Drawing.Point(147, 9);
+            this.txtCodSecao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodSecao.Name = "txtCodSecao";
-            this.txtCodSecao.Size = new System.Drawing.Size(65, 20);
+            this.txtCodSecao.Size = new System.Drawing.Size(85, 22);
             this.txtCodSecao.TabIndex = 31;
             // 
             // labelNomeAutor
             // 
             this.labelNomeAutor.AutoSize = true;
             this.labelNomeAutor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeAutor.Location = new System.Drawing.Point(12, 47);
+            this.labelNomeAutor.Location = new System.Drawing.Point(16, 34);
+            this.labelNomeAutor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNomeAutor.Name = "labelNomeAutor";
-            this.labelNomeAutor.Size = new System.Drawing.Size(92, 15);
+            this.labelNomeAutor.Size = new System.Drawing.Size(118, 20);
             this.labelNomeAutor.TabIndex = 30;
             this.labelNomeAutor.Text = "Descrição Seção";
             // 
-            // colCodSecao
-            // 
-            this.colCodSecao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.colCodSecao.FillWeight = 152.2843F;
-            this.colCodSecao.HeaderText = "Codigo";
-            this.colCodSecao.Name = "colCodSecao";
-            this.colCodSecao.ReadOnly = true;
-            this.colCodSecao.Width = 65;
-            // 
-            // colDescSecao
-            // 
-            this.colDescSecao.FillWeight = 73.85786F;
-            this.colDescSecao.HeaderText = "Descrição";
-            this.colDescSecao.Name = "colDescSecao";
-            this.colDescSecao.ReadOnly = true;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(591, 322);
+            this.ClientSize = new System.Drawing.Size(821, 449);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dadosGrid);
             this.Controls.Add(this.btn_Excluir);
@@ -157,6 +167,7 @@
             this.Controls.Add(this.txtCodSecao);
             this.Controls.Add(this.labelNomeAutor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Cadastro de Seção";
             this.Load += new System.EventHandler(this.Form1_Load);
