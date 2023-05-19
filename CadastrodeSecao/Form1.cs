@@ -152,6 +152,26 @@ namespace CadastrodeSecao
                 MessageBox.Show($"Houve um problema ao excluir a editora!\n{ex.Message}");
             }
         }
+
+        private void asteriscoAlert_MouseHover(object sender, EventArgs e)
+        {
+            Label label = (Label)sender;
+            string mensagem = "Este Campo é obrigatório!";
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(label, mensagem);
+        }
+
+        private void txtDescSecao_TextChanged(object sender, EventArgs e)
+        {
+            if (txtDescSecao.Text == "")
+            {
+                asteriscoAlert.Visible = true;  // Mostra a label se o TextBox estiver vazio
+            }
+            else
+            {
+                asteriscoAlert.Visible = false; // Oculta a label se o TextBox estiver preenchido
+            }
+        }
     }
 }
 
