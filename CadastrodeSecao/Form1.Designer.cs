@@ -126,8 +126,6 @@
             // 
             // txtDescSecao
             // 
-            this.txtDescSecao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescSecao.BackColor = System.Drawing.SystemColors.Info;
             this.txtDescSecao.Location = new System.Drawing.Point(147, 39);
             this.txtDescSecao.Margin = new System.Windows.Forms.Padding(4);
@@ -154,13 +152,12 @@
             this.labelNomeAutor.Location = new System.Drawing.Point(21, 39);
             this.labelNomeAutor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNomeAutor.Name = "labelNomeAutor";
-            this.labelNomeAutor.Size = new System.Drawing.Size(118, 20);
+            this.labelNomeAutor.Size = new System.Drawing.Size(116, 20);
             this.labelNomeAutor.TabIndex = 30;
-            this.labelNomeAutor.Text = "Descrição Seção";
+            this.labelNomeAutor.Text = "Descrição seção";
             // 
             // asteriscoAlert
             // 
-            this.asteriscoAlert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.asteriscoAlert.AutoSize = true;
             this.asteriscoAlert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asteriscoAlert.ForeColor = System.Drawing.Color.Red;
@@ -189,7 +186,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Seção";
+            this.Text = "Cadastro de seção";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosGrid)).EndInit();
             this.ResumeLayout(false);
